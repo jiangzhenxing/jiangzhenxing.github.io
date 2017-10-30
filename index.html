@@ -6,10 +6,20 @@
 </head>
 <body>
 Hello!
-<!-- UY BEGIN -->
-<div id="uyan_frame" width=500 height=300>uyan</div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2147690"></script>
-UY END
-<!-- UY END -->
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+//  id: '页面 ID', // 可选。默认为 location.href
+  owner: 'jiangzhenxing',
+  repo: 'gitment',
+  oauth: {
+    client_id: 'e65dcc5c8ebe0c730193',
+    client_secret: 'f78e321d1bddf51a58f4ad2acc2ea62aa20b9ca8',
+  },
+})
+gitment.render('container')
+</script>
 </body>
 </html>
